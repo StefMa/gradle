@@ -51,6 +51,13 @@ public class ProjectBuilder {
     private ProjectBuilderImpl impl = new ProjectBuilderImpl();
 
     /**
+     * Private constructor.
+     * An instance should only be created via the {@link #builder()}.
+     */
+    private ProjectBuilder() {
+    }
+
+    /**
      * Creates a project builder.
      *
      * @return The builder
@@ -73,6 +80,7 @@ public class ProjectBuilder {
     /**
      * Specifies the Gradle user home for the builder. If not set, an empty directory under the project directory
      * will be used.
+     *
      * @return The builder
      */
     public ProjectBuilder withGradleUserHomeDir(File dir) {
