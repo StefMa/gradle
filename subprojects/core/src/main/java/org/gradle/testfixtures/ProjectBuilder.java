@@ -51,10 +51,11 @@ public class ProjectBuilder {
     private ProjectBuilderImpl impl = new ProjectBuilderImpl();
 
     /**
-     * Private constructor.
+     * Don't use this constructor anymore.
+     *
      * An instance should only be created via the {@link #builder()}.
      */
-    private ProjectBuilder() {
+    public ProjectBuilder() {
         SingleMessageLogger.nagUserOfDeprecated("The ProjectBuilder() constructor", "Please use ProjectBuilder.builder() instead.");
     }
 
