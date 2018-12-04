@@ -55,6 +55,7 @@ public class ProjectBuilder {
      * An instance should only be created via the {@link #builder()}.
      */
     private ProjectBuilder() {
+        SingleMessageLogger.nagUserOfDeprecated("The ProjectBuilder() constructor", "Please use ProjectBuilder.builder() instead.");
     }
 
     /**
